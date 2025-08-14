@@ -1,0 +1,623 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+
+
+@media screen and (min-width: 1700px) and (max-width: 2000px) {
+    .hero-area{
+        /* height: 900px; */
+    }
+    .hero-title {
+    text-align: center;
+    }
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .logo img {
+        width: 160px;
+    }
+    .menu-bar {
+        display: block;
+    }
+   
+    .menu-item {
+        display: none !important;
+    }
+
+    .mobile-icon-ss {
+        margin-top: -5px;
+        margin-right: 1px !important;
+        display: block !important;
+        margin-left: 0px;
+    }
+    .s-icon {
+        display: none;
+    }
+    .mobile-icon-ss ul {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .mobile-icon-ss ul li img {
+        width: 40px;
+    }
+    .menu-bar-wraper {
+        display: flex;
+        align-items: center;
+    }
+    nav {
+     
+        border-radius: 15px;
+        padding: 3px 7px;
+    }
+    header {
+        padding: 10px 0px;
+        position: fixed;
+        margin: auto;
+        width: 100%;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+   
+    .h-t {
+        color: #F4E441;
+        text-align: center;
+        font-family: "Nerko One";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        text-transform: uppercase;
+        display: inline-block;
+        border-radius: 100px;
+        background: #161B32;
+        padding: 11px 40px;
+        position: absolute;
+        top: -23px;
+        margin: auto;
+    }
+    .hero-area{
+        padding-top: 80px;
+  
+        object-fit: cover;
+        height: 700px;
+
+    }
+    .hero-item {
+        display: block;
+    }
+    .hero-left ul {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding-top: 258px;
+        position: absolute;
+      }
+
+      .hero-left ul li{
+       width: 50%;
+       margin-bottom: 10px;
+      }
+    .hero-left ul li a {
+        display: block;
+        padding: 10px 0;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .hero-right {
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        margin-top: 43px;
+        bottom: -326px;
+    }
+    .hero-right ul{
+        display: flex;
+        align-items: center;
+        justify-content:right;
+        margin-top: 10px;
+    }
+    .hero-center-img {
+     
+        bottom: -283px;
+    }
+
+    .hero-center-img img {
+        max-width: 300px;
+    }
+
+    .hero-left ul li a img {
+        transition: .3s;
+        width: 158px;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+    .Tokenomics-area{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 800px;
+    }
+    .Token_Address p {
+        margin-top: 20px;
+        font-size: 12px;
+        margin-left: 0px;
+        padding: 10px 8px;
+
+    }
+ 
+    .token-title {
+        margin-bottom: 23px;
+    }
+    .tokenomics-items{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+.tk-wrapper {
+	display: flex;
+	gap: 1px 14px;
+}
+    .tokenomics-items h2 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    .tokenomics-items p {
+        font-size: 20px;
+    }
+
+    .trc-top {
+        margin-top: 0px;
+    }
+.tk-2 {
+
+	margin-top: 2px;
+}
+.tk-1{
+    margin-left: 50px;
+}
+.toky-img img {
+	width: 450px;
+   
+	
+}
+
+    main{
+        overflow: hidden !important;
+    }
+.about-left {
+	padding-left: 0px;
+}
+   .about-left h2 {
+
+	font-size: 25px;
+	
+	margin-bottom: 20px;
+	
+	margin-top: 46px;
+
+}.about-left h2 span {
+	
+	font-size: 53px;
+	
+}
+
+    .about-left p {
+     
+        font-size: 17px;
+    }
+
+    .token-title h2 {
+    font-size: 60px;
+    }
+    
+
+.copy-notification {
+    color: #000;
+    background-color: #EB5C3D;
+    padding: 10px 10px;
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    margin-top: -30px;
+    margin-left: -85px;
+    display: none;
+    text-align:center;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+
+.tools-list ul {
+	
+	justify-content: center;
+}
+footer{
+    height: 1200px;
+}
+.ds-wrapper p {
+  font-size: 17px;
+}
+.de-rt-img img {
+  width: 200px;
+}
+
+.tools-list ul li a img {
+	transition: .3s;
+	width: 61px;
+	margin-top: 100px;
+}
+
+.ds-wrapper ul {
+	display: flex;
+	align-items: center;
+	gap: 0 20px;
+	justify-content: center;
+    margin-top: 30px;
+}
+.ds-wrapper ul li a img{
+    width: 40px;
+}
+
+.ds-wrapper {
+	max-width: 1039px;
+	margin-left: auto;
+	margin-top: 7px;
+	background-image: url(https://babyspark.io/css/img/ds.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 44px 0px;
+	padding-left: 0px;
+}
+
+
+.ds-wrapper h2 {
+  font-size: 60px;
+}
+
+.copyright- {
+	background: #EB5C3D;
+	padding: 10px 0;
+	position: relative;
+	text-align: center;
+	margin-top: -30px;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+
+@media screen and (max-width: 767px) {
+    .logo img {
+        width: 160px;
+    }
+    .menu-bar {
+        display: block;
+    }
+   
+    .menu-item {
+        display: none !important;
+    }
+
+    .mobile-icon-ss {
+        margin-top: -5px;
+        margin-right: 1px !important;
+        display: block !important;
+        margin-left: 0px;
+    }
+    .s-icon {
+        display: none;
+    }
+    .mobile-icon-ss ul {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .mobile-icon-ss ul li img {
+        width: 40px;
+    }
+    .menu-bar-wraper {
+        display: flex;
+        align-items: center;
+    }
+    nav {
+     
+        border-radius: 15px;
+        padding: 3px 7px;
+    }
+    header {
+        padding: 10px 0px;
+        position: fixed;
+        margin: auto;
+        width: 100%;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+   
+    .h-t {
+        color: #F4E441;
+        text-align: center;
+        font-family: "Nerko One";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        text-transform: uppercase;
+        display: inline-block;
+        border-radius: 100px;
+        background: #161B32;
+        padding: 11px 40px;
+        position: absolute;
+        top: -23px;
+        margin: auto;
+    }
+    .hero-area{
+        padding-top: 80px;
+  
+        object-fit: cover;
+        height: 700px;
+
+    }
+    .hero-item {
+        display: block;
+    }
+    .hero-left ul {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding-top: 258px;
+        position: absolute;
+      }
+
+      .hero-left ul li{
+       width: 50%;
+       margin-bottom: 10px;
+      }
+    .hero-left ul li a {
+        display: block;
+        padding: 10px 0;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .hero-right {
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        margin-top: 43px;
+        bottom: -426px;
+    }
+    .hero-right ul{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        margin-top: 10px;
+    }
+    .hero-center-img {
+     
+        bottom: -283px;
+    }
+
+    .hero-center-img img {
+        max-width: 300px;
+    }
+
+    .hero-left ul li a img {
+        transition: .3s;
+        width: 158px;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+    .Tokenomics-area{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 800px;
+    }
+    .Token_Address p {
+        margin-top: 20px;
+        font-size: 12px;
+        margin-left: 0px;
+        padding: 10px 8px;
+
+    }
+ 
+    .token-title {
+        margin-bottom: 23px;
+    }
+    .tokenomics-items{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+.tk-wrapper {
+	display: flex;
+	gap: 1px 14px;
+}
+    .tokenomics-items h2 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    .tokenomics-items p {
+        font-size: 20px;
+    }
+
+    .trc-top {
+        margin-top: 0px;
+    }
+.tk-2 {
+
+	margin-top: 2px;
+}
+.tk-1{
+    margin-left: 50px;
+}
+.toky-img img {
+	width: 450px;
+   
+	
+}
+
+    main{
+        overflow: hidden !important;
+    }
+.about-left {
+	padding-left: 0px;
+}
+   .about-left h2 {
+
+	font-size: 25px;
+	
+	margin-bottom: 20px;
+	
+	margin-top: 46px;
+
+}.about-left h2 span {
+	
+	font-size: 53px;
+	
+}
+
+    .about-left p {
+     
+        font-size: 17px;
+    }
+
+    .token-title h2 {
+    font-size: 60px;
+    }
+    
+
+.copy-notification {
+    color: #000;
+    background-color: #EB5C3D;
+    padding: 10px 10px;
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    margin-top: -30px;
+    margin-left: -85px;
+    display: none;
+    text-align:center;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+
+.tools-list ul {
+	
+	justify-content: center;
+}
+footer{
+    height: 1200px;
+}
+.ds-wrapper p {
+  font-size: 17px;
+}
+.de-rt-img img {
+  width: 200px;
+}
+
+.tools-list ul li a img {
+	transition: .3s;
+	width: 61px;
+	margin-top: 100px;
+}
+
+.ds-wrapper ul {
+	display: flex;
+	align-items: center;
+	gap: 0 20px;
+	justify-content: center;
+    margin-top: 30px;
+}
+.ds-wrapper ul li a img{
+    width: 40px;
+}
+
+.ds-wrapper {
+	max-width: 1039px;
+	margin-left: auto;
+	margin-top: 7px;
+	background-image: url(https://babyspark.io/css/img/ds.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 44px 0px;
+	padding-left: 0px;
+}
+
+
+.ds-wrapper h2 {
+  font-size: 60px;
+}
+
+.copyright- {
+	background: #EB5C3D;
+	padding: 10px 0;
+	position: relative;
+	text-align: center;
+	margin-top: -30px;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}

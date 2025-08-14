@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Nerko+One&display=swap');
+
+
+@font-face {
+    font-family: 'DK Frozen Memory';
+    src: url('fonts/DKFrozenMemory-Regular.woff') format('woff'),
+        url('fonts/DKFrozenMemory-Regular.ttf') format('truetype'),
+        url('fonts/DKFrozenMemory-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('fonts/HelveticaNowDisplay-Regular.woff') format('woff'),
+        url('fonts/HelveticaNowDisplay-Regular.ttf') format('truetype'),
+        url('fonts/HelveticaNowDisplay-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('fonts/HelveticaNowDisplay-Medium.woff') format('woff'),
+        url('fonts/HelveticaNowDisplay-Medium.ttf') format('truetype'),
+        url('fonts/HelveticaNowDisplay-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    font-family: 'Helvetica Now Display';
+    font-size: 18px;
+    font-weight: 500;
+    background: #FFEEC0;
+    color: #000000;
+}
+
+a,
+button {
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.scrolltotop {
+ 
+    
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    display: none;
+    transition: 0.2s all ease;
+    -webkit-transition: 0.2s all ease;
+    -moz-transition: 0.2s all ease;
+    z-index: 999999999999999;
+}
+
+
+
+
+/*==== nev area start===== */
+header {
+    padding:10px 20px 0px;
+    z-index: 9999999999999;
+    position: fixed;
+    top: 18px;
+    width: 100%;
+}
+
+
+
+nav {
+    max-width: 860px;
+    margin: auto;
+    border-radius: 20px 0 0 20px;
+    border: 3px solid #000;
+    background: #000;
+    position: relative;
+    padding: 10px 16px;
+}
+
+.logo {
+    position: relative;
+    width: 70px;
+    display: block;
+    background-color: red;
+    border: 2px solid red;
+
+}
+.logo img{
+    position: absolute;
+    top: -45px;
+    left: -12px;
+    opacity: 1 !important;
+    
+
+}
+
+.menu-item ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.menu-item ul li{
+  
+}
+
+.menu-item ul li a {
+    color: #FFC31D;
+    text-align: center;
+    font-family: "DK Frozen Memory";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 41.6px */
+    text-transform: uppercase;
+    transition: .3s;
+    text-align: center;
+    opacity: 0.4;
+}
+
+.menu-item ul li a:hover {
+  color: #FFC31D;
+    opacity: 1 !important;
+
+}
+.logo img a{
+    opacity: 1 !important;
+}
+.active a{
+   color: #FFC31D;
+    opacity: 1 !important;
+
+}
+
+.menu-icon ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-icon ul li a{
+    transition: .3s;
+}
+.menu-icon ul li a:hover{
+    transform: scale(1.2);
+}
+
+.section-gap{
+    display: block;
+    padding: 10px;
+}
+.menu-bar {
+    display: none;
+}
+.menu-bar ul{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.mlogo img{
+    width: 50px;
+}
+.menu-bar a {
+    font-size: 30px;
+    color: #FF861D;
+    cursor: pointer;
+}
+.s-icon{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-left: 15px;
+}
+.s-icon a {
+    display: inline-block;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.s-icon a:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+.mobile-icon-ss {
+    display: none;
+}
+/*==== nev area end===== */
+
+/*==== sticky-nev start=== */
+
+.fixed-menu {
+   
+    position: fixed;
+    top: 20px !important;
+    -webkit-animation: slide-down 0.5s !important;
+            animation: slide-down 0.5s !important;
+    left: 0;
+    top:0px;
+    right: 0;
+  
+    -webkit-transition: .10s;
+    -o-transition: .10s;
+    transition: .10s;
+    z-index: 9999999999;
+}
+
+main{
+    overflow: hidden !important;
+}
+
+
+/*==== sticky-nev end=== */
+
+/* ====offcanvas manu start===== */
+
+.offcanvas-header {
+    background-color: #000;
+    border-bottom: 1px solid #E49958;
+}
+
+.offcanvas-header h5 img {
+    max-width: 50px;
+}
+
+.offcanvas-body {
+    background-color: #161B32;
+    padding: 0px !important;
+    position: relative;
+    z-index: 999999999999999;
+}
+
+.clloss-x {
+    font-size: 25px;
+    cursor: pointer;
+    color: #FF861D;
+}
+
+.clloss-x:hover {
+    color: #FF861D !important;
+}
+
+.offcanvas-start {
+    top: 0;
+    left: 0;
+    width: 340px;
+    z-index: 11111111111111;
+}
+
+.mobile-menu-item ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    padding: 15px 20px;
+    display: block;
+    transition: .2s;
+    text-transform: uppercase;
+}
+
+.mobile-menu-item ul li a:hover {
+    background-color: #FF861D;
+    color: #000;
+}
+
+.m-active {
+    background: #FF861D;
+    color: #000 !important;
+}
+
+.mobile-menu-item ul li a i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* ====offcanvas manu end===== */
+
+/* =====hero-area-start===== */
+
+.hero-area{
+    
+    background-image: url(img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+    padding:100px  0 100px 0;
+    position: relative;
+    height: 940px;
+
+}
+
+.h-t{
+    color: #F4E441;
+    text-align: center;
+    font-family: "Nerko One";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 100px;
+    background: #161B32;
+    padding: 12px 60px;
+    position: absolute;
+    top: -38px;
+    margin: auto;
+}
+.hero-item{
+  position: relative;
+}
+.hero-left {
+  position: relative;
+  z-index: 9999999;
+}
+.hero-left ul{
+    position: relative;
+    z-index: 999;
+   
+}
+.hero-left ul li {
+    margin-bottom: 10px;
+}
+.hero-left ul li a img{
+    transition: .3s;
+}
+.hero-left ul li a img:hover{
+    transform: scale(1.1);
+}
+
+.hero-right ul{
+    display: flex;
+    align-items: end;
+    gap: 0 20px;
+}
+.hero-right ul li a img{
+    transition: .3s;
+}
+.hero-right ul li a img:hover{
+    transform: scale(1.1);
+}
+
+.hero-center-img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: -140px;
+}
+
+.hero-center-img img{
+    max-width: 600px;
+}
+
+.hero-right{
+    position: absolute;
+    right: 0px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about area start */
+
+.about-area {
+    background: #FFEEC0;
+
+}
+
+.about-left {
+   padding-left: 50px;
+
+}
+
+
+
+.about-left h2{
+    color: #000;
+    text-align: center;
+    font-family: "DK Frozen Memory";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 41.6px */
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-top: 150px;
+}
+
+.about-left h2 span{
+    color: #EB5C3D;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "DK Frozen Memory";
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 100px */
+    text-transform: uppercase;
+}
+
+
+
+
+.about-left p{
+    color: #000;
+    font-family: "Helvetica Now Display";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+}
+.about-right{
+    text-align: center;
+}
+
+
+.about-right img{
+    display: inline-block;
+    margin-top: -100px;
+    position: relative;
+    z-index: 99;
+}
+
+
+/* =======Tokenomics area start===== */
+.Tokenomics-area{
+   padding: 80px 0;
+   position: relative;
+   padding-bottom: 120px;
+}
+
+
+.token-title h2{
+    color: #EB5C3D;
+
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "DK Frozen Memory";
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 200px */
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+
+.Token_Address p{
+   color: #161B32;
+    font-family: "Helvetica Now Display";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 31.2px */
+    border-radius: 65px;
+    border: 1px solid #000;
+    background: #FFEEC0;
+    padding: 18px 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.Token_Address p img{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.tokenomics-items{
+
+}
+.tokenomics-items h2{
+    color: #EB5C3D;
+    leading-trim: both;
+   
+    font-family: "DK Frozen Memory";
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 150px */
+}
+
+.tokenomics-items h2 span{
+    font-family: "Helvetica Now Display";
+}
+.tokenomics-items p{
+  color: #000;
+    font-family: "DK Frozen Memory";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 41.6px */
+    margin-bottom: 10px;
+}
+
+.tokenomics-items p a{
+    color: #000;
+}
+
+.tk-wrapper{
+    display: flex;
+    gap: 0 60px;
+    
+}
+.tk-1{
+    transform: rotate(-9.173deg);
+    align-self: stretch;
+}
+.tk-2{
+     transform: rotate(-9.173deg);
+    align-self: stretch;
+    margin-top: 100px;
+}
+
+.toky-img{
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+}
+.toky-img img{
+    width: 550px;
+}
+
+
+
+/*  disclaimer area start */
+
+footer{
+   background-image: url(img/footer.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top center;
+   /* height: 1100px; */
+   padding: 100px 0 0;
+   margin-top: -75px;
+   position: relative;
+   z-index: 999;
+    
+}
+.ft-img{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.tools-list ul{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 100px;
+}
+.tools-list ul li a img{
+    transition: .3s;
+}
+
+.tools-list ul li a img:hover{
+    transform: scale(1.1);
+}
+
+.de-rt-img{
+    position: absolute;
+    right: 0px;
+    top: 80px;
+}
+
+
+.ds-wrapper {
+    max-width: 1100px;
+    margin-left:auto;
+    margin-top: 370px;
+    background-image: url(img/ds.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 100px 50px;
+    padding-left: 250px;
+}
+.ds-wrapper h2{
+    color: #EB5C3D;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "DK Frozen Memory";
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 140px */
+    text-transform: uppercase;
+    transform: rotate(-3.007deg);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.ds-wrapper p{
+    color: #000;
+    font-family: "Helvetica Now Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+
+}
+.ds-wrapper ul{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    justify-content: right;
+}
+
+/* ============== */
+.copy-notification {
+    color: #000;
+    background-color: #EB5C3D;
+    padding: 20px 10px;
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-top: -30px;
+    margin-left: -85px;
+    display: none;
+    text-align:center;
+    cursor: pointer;
+    font-size: 28px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 9999999;
+}
+
+/* ========= */
+.copyright-{
+    background: #EB5C3D;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    margin-top: -30px;
+}
+.copyright- p{
+    color: #FFEEC0;
+    font-family: "DK Frozen Memory";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+}
+
+.copyright- p span{
+    font-family: "Helvetica Now Display";
+    color: #000;
+    font-weight: 600;
+}
