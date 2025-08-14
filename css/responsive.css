@@ -255,7 +255,7 @@ Small Screen - Tablate
 	justify-content: center;
 }
 footer{
-    height: 1200px;
+    height: 350px;
 }
 .ds-wrapper p {
   font-size: 17px;
@@ -281,7 +281,7 @@ footer{
 }
 
 .ds-wrapper {
-	max-width: 1039px;
+	max-width: 500px;
 	margin-left: auto;
 	margin-top: 7px;
 	background-image: url(https://babyspark.io/css/img/ds.png);
