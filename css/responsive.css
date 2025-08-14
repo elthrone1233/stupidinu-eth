@@ -267,7 +267,7 @@ footer{
 .tools-list ul li a img {
 	transition: .3s;
 	width: 61px;
-	margin-top: 100px;
+	margin-top: 150px;
 }
 .ds-wrapper ul {
 	display: flex;
@@ -287,7 +287,7 @@ footer{
 	background-image: url(https://babyspark.io/css/img/ds.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-	padding: 44px 0px;
+	padding: 20px 0px;
 	padding-left: 0px;
 }
 
@@ -301,7 +301,7 @@ footer{
 	padding: 10px 0;
 	position: relative;
 	text-align: center;
-	margin-top: -30px;
+	margin-top: -10px;
 	position: absolute;
 	width: 100%;
 	bottom: 0px;
@@ -556,7 +556,7 @@ Xtra Small Screen - Small Mobile
 	justify-content: center;
 }
 footer{
-    height: 1200px;
+    height: 650px;
 }
 .ds-wrapper p {
   font-size: 17px;
